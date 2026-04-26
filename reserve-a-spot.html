@@ -2196,63 +2196,10 @@ nav{
             <form class="form-grid" action="start-parent-approval.php" method="post" novalidate>
               <input type="hidden" name="return-to" value="parent-approval.html" />
               <input type="hidden" name="return-error" value="reserve-a-spot.html" />
+              <input type="radio" name="program-track" value="four-week-full-program" checked hidden />
+              <input type="radio" name="preferred-session" value="fw_jul_6_31" checked hidden />
               <div class="step-block">
-                <h2 class="form-step-title">Step 1 &mdash; Choose Your Program</h2>
-              </div>
-              <div class="field">
-                <div class="program-grid">
-                  <label class="program-card">
-                    <input type="radio" name="program-track" value="two-week-builder-sprint" required />
-                    <p class="program-title">2-Week Builder Sprint</p>
-                    <p class="program-price">$550</p>
-                    <p class="program-line">A focused introduction.</p>
-                    <p class="program-line">Build and test one idea.</p>
-                  </label>
-                  <label class="program-card">
-                    <input type="radio" name="program-track" value="four-week-full-program" />
-                    <p class="program-title">4-Week Full Program</p>
-                    <p class="program-price">$1,100</p>
-                    <p class="program-line">The full experience.</p>
-                    <p class="program-line">Deeper build, more iteration, final showcase.</p>
-                  </label>
-                </div>
-                <small class="field-error">Please choose a program.</small>
-              </div>
-              <div class="step-block">
-                <h2 class="form-step-title">Step 2 &mdash; Choose Your Session</h2>
-              </div>
-              <div class="field">
-                <label class="section-heading">Available Sessions</label>
-                <div class="session-grid gloss-active">
-                  <label class="session-card" data-session-key="session1">
-                    <input type="radio" name="preferred-session" value="fw_jul_6_31" required />
-                    <div class="session-card-body">
-                      <div class="session-title" data-session-title data-session-key="session1">July 6&ndash;31</div>
-                    </div>
-                  </label>
-                  <label class="session-card" data-session-key="session2">
-                    <input type="radio" name="preferred-session" value="fw_aug_4_28" />
-                    <div class="session-card-body">
-                      <div class="session-title" data-session-title data-session-key="session2">Aug 4&ndash;28</div>
-                    </div>
-                  </label>
-                  <label class="session-card is-hidden" data-session-key="session3" hidden style="display:none;">
-                    <input type="radio" name="preferred-session" value="tw_jul_20_31" />
-                    <div class="session-card-body">
-                      <div class="session-title" data-session-title data-session-key="session3">July 20&ndash;31</div>
-                    </div>
-                  </label>
-                  <label class="session-card is-hidden" data-session-key="session4" hidden style="display:none;">
-                    <input type="radio" name="preferred-session" value="tw_aug_17_28" />
-                    <div class="session-card-body">
-                      <div class="session-title" data-session-title data-session-key="session4">Aug 17&ndash;28</div>
-                    </div>
-                  </label>
-                </div>
-                <small class="field-error">Please select a session.</small>
-              </div>
-              <div class="step-block">
-                <h2 class="form-step-title">Step 3 &mdash; Parent &amp; Student Details</h2>
+                <h2 class="form-step-title">Parent &amp; Student Details</h2>
               </div>
               <div class="field-row three-col">
                 <div class="field">
@@ -2292,7 +2239,7 @@ nav{
               </div>
               <div class="register-actions">
                 <button class="register-btn" type="submit" data-cta-label="Register">Register</button>
-                <button class="info-session-trigger-btn" type="button" data-open-info-session data-cta-label="Need More Info Sign Up for a Free Info Session">Need More Info? Learn How The Money Club.Org Works &mdash; Sign Up for a Free Info Session</button>
+                <button class="info-session-trigger-btn" type="button" data-open-info-session data-cta-label="Need More Info Learn How The Money Club.Org Works">Need More Info? Learn How The Money Club.Org Works</button>
               </div>
             <div class="confirmation-grid is-hidden">
               <div class="confirmation-card">
