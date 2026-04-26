@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Reserve a Spot | Summer Camp Registration for Ages 10–16 | The Money Club.Org</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <meta name="description" content="Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th program for computer-literate students." />
+  <meta name="description" content="Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th or August 10th-14th program for computer-literate students." />
   <meta property="og:title" content="Reserve a Spot | Summer Camp Registration for Ages 10–16 | The Money Club.Org" />
-  <meta property="og:description" content="Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th program for computer-literate students." />
+  <meta property="og:description" content="Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th or August 10th-14th program for computer-literate students." />
   <meta property="og:url" content="https://the-money-club.org/reserve-a-spot.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://the-money-club.org/assets/Kids-Index.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Reserve a Spot | Summer Camp Registration for Ages 10–16 | The Money Club.Org" />
-  <meta name="twitter:description" content="Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th program for computer-literate students." />
+  <meta name="twitter:description" content="Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th or August 10th-14th program for computer-literate students." />
   <meta name="twitter:image" content="https://the-money-club.org/assets/Kids-Index.jpg" />
     <link rel="canonical" href="https://the-money-club.org/reserve-a-spot.html" />
   <script type="application/ld+json">
@@ -25,7 +25,7 @@
           "@id": "https://the-money-club.org/reserve-a-spot.html#webpage",
           "url": "https://the-money-club.org/reserve-a-spot.html",
           "name": "Reserve a Spot | Summer Camp Registration for Ages 10–16 | The Money Club.Org",
-          "description": "Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th program for computer-literate students.",
+          "description": "Reserve a spot for The Money Club.Org Summer 2026. Register for the July 6th-11th or August 10th-14th program for computer-literate students.",
           "about": [
             {
               "@id": "https://the-money-club.org/#organization"
@@ -122,8 +122,8 @@
           "@type": "EducationEvent",
           "@id": "https://the-money-club.org/reserve-a-spot.html#session-2",
           "name": "The Money Club.Org Summer Program Session 2",
-          "startDate": "2026-07-06",
-          "endDate": "2026-07-11",
+          "startDate": "2026-08-10",
+          "endDate": "2026-08-14",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
           "location": {
@@ -2197,9 +2197,26 @@ nav{
               <input type="hidden" name="return-to" value="parent-approval.html" />
               <input type="hidden" name="return-error" value="reserve-a-spot.html" />
               <input type="radio" name="program-track" value="money-club-program" checked hidden />
-              <input type="radio" name="preferred-session" value="jul_6_11" checked hidden />
               <div class="step-block">
                 <h2 class="form-step-title">Parent &amp; Student Details</h2>
+              </div>
+              <div class="field">
+                <label class="section-heading">Preferred Session</label>
+                <div class="session-grid gloss-active">
+                  <label class="session-card" data-session-key="session1">
+                    <input type="radio" name="preferred-session" value="jul_6_11" required checked />
+                    <div class="session-card-body">
+                      <div class="session-title" data-session-title data-session-key="session1">July 6th&ndash;11th</div>
+                    </div>
+                  </label>
+                  <label class="session-card" data-session-key="session2">
+                    <input type="radio" name="preferred-session" value="aug_10_14" />
+                    <div class="session-card-body">
+                      <div class="session-title" data-session-title data-session-key="session2">August 10th&ndash;14th</div>
+                    </div>
+                  </label>
+                </div>
+                <small class="field-error">Please select a session.</small>
               </div>
               <div class="field-row three-col">
                 <div class="field">
@@ -2361,12 +2378,14 @@ nav{
           'money-club-program': {
             label: 'The Money Club.Org Program',
             tuition: 180,
-            includes: 'Includes the July 6th-11th program, materials, and student build work.',
+            includes: 'Includes the July 6th-11th or August 10th-14th program, materials, and student build work.',
             sessionOrder: {
-              session1: { value: 'jul_6_11', label: 'July 6th-11th' }
+              session1: { value: 'jul_6_11', label: 'July 6th-11th' },
+              session2: { value: 'aug_10_14', label: 'August 10th-14th' }
             },
             sessions: {
-              jul_6_11: 'July 6th-11th'
+              jul_6_11: 'July 6th-11th',
+              aug_10_14: 'August 10th-14th'
             }
           }
         };

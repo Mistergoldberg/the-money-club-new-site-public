@@ -133,7 +133,8 @@ $program_options = [
         'label' => 'The Money Club.Org Program',
         'tuition' => 180,
         'sessions' => [
-            'jul_6_11' => 'July 6th-11th, 2026'
+            'jul_6_11' => 'July 6th-11th, 2026',
+            'aug_10_14' => 'August 10th-14th, 2026'
         ]
     ]
 ];
@@ -143,6 +144,11 @@ if (!array_key_exists($program_track, $program_options)) {
 }
 
 if ($preferred_session === '' && $preferred_month !== '') {
+    $preferred_session = strtolower($preferred_month) === 'august' ? 'aug_10_14' : 'jul_6_11';
+}
+if ($preferred_session === 'session2' || strpos($preferred_session, 'aug') === 0) {
+    $preferred_session = 'aug_10_14';
+} elseif (preg_match('/^session[0-9]+$/', $preferred_session) || strpos($preferred_session, 'jul') === 0 || strpos($preferred_session, 'tw_') === 0 || strpos($preferred_session, 'fw_') === 0) {
     $preferred_session = 'jul_6_11';
 }
 
@@ -164,7 +170,8 @@ if ($payment_method === '' || $payment_method !== 'e-Transfer') {
 
 $availability_path = $data_dir . '/availability.json';
 $availability_defaults = [
-    'jul_6_11' => 30
+    'jul_6_11' => 30,
+    'aug_10_14' => 30
 ];
 
 function update_availability($path, $defaults, $callback) {

@@ -34,7 +34,7 @@
           "@type": "WebPage",
           "@id": "https://the-money-club.org/#webpage",
           "url": "https://the-money-club.org/",
-          "name": "Toronto Kids Summer Camp 2026 | July 6th-11th | The Money Club.Org",
+          "name": "Toronto Kids Summer Camp 2026 | July 6th-11th and August 10th-14th | The Money Club.Org",
           "description": "Toronto summer camp for ages 10–16 at UTSU Student Commons in downtown Toronto. In-person, project-based program in financial literacy, entrepreneurship, design thinking, and public speaking.",
           "isPartOf": {
             "@id": "https://the-money-club.org/#website"
@@ -195,7 +195,7 @@
           "name": "The Money Club.Org Summer Program Session 1",
           "description": "In-person 2-week Toronto summer sprint for students ages 10–16 focused on financial literacy and design thinking.",
           "startDate": "2026-07-06",
-          "endDate": "2026-07-17",
+          "endDate": "2026-07-11",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
           "location": {
@@ -213,8 +213,8 @@
           "@id": "https://the-money-club.org/#session-2",
           "name": "The Money Club.Org Summer Program Session 2",
           "description": "In-person 2-week Toronto summer sprint for students ages 10–16 focused on financial literacy and design thinking.",
-          "startDate": "2026-07-06",
-          "endDate": "2026-07-11",
+          "startDate": "2026-08-10",
+          "endDate": "2026-08-14",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
           "location": {
@@ -3299,7 +3299,7 @@
         <div class="openbook-grid openbook-expenses">
           <div class="openbook-summary standout">
             <h3>Expense Summary</h3>
-            <span class="openbook-subtitle">Costs to run the program at the UTSU Student Commons, July 6th&ndash;11th, with 3 university mentors.</span>
+            <span class="openbook-subtitle">Costs to run the program at the UTSU Student Commons, July 6th&ndash;11th and August 10th&ndash;14th, with 3 university mentors.</span>
             <table class="openbook-table" aria-label="Program expense summary">
               <thead>
                 <tr>
@@ -3411,7 +3411,7 @@
       <div class="section-content">
         <div class="section-copy pricing-info-copy">
           <div class="pricing-block">
-            <p><strong>The Money Club.Org Program</strong><br />$180 + HST<br />July 6th&ndash;11th.</p>
+            <p><strong>The Money Club.Org Program</strong><br />$180 + HST<br />July 6th&ndash;11th or August 10th&ndash;14th.</p>
             <p>Limited to 30 participants.</p>
             <p>For computer-literate students.</p>
             <p>Students use AI and mentor guidance to build, test, price, and improve products, services, and simple apps.</p>
@@ -3433,7 +3433,7 @@
             <div class="pricing-schedule-row">
               <div class="pricing-schedule-copy">
                 <p><strong>Schedule</strong><br />Weekdays, 9:00 AM&ndash;5:00 PM<br />Core instruction: 9:30 AM&ndash;3:30 PM</p>
-                <p><strong>Dates</strong><br />July 6th&ndash;11th</p>
+                <p><strong>Dates</strong><br />July 6th&ndash;11th<br />August 10th&ndash;14th</p>
                 <p><strong>Location</strong><br />UTSU Student Commons<br />230 College Street<br />Toronto, ON<br /><br />Easy TTC access</p>
               </div>
               <div class="location-map-card">
@@ -3469,9 +3469,26 @@
               <input type="hidden" name="return-to" value="parent-approval.html" />
               <input type="hidden" name="return-error" value="pricing.html" />
               <input type="radio" name="program-track" value="money-club-program" checked hidden />
-              <input type="radio" name="preferred-session" value="jul_6_11" checked hidden />
               <div class="step-block">
                 <h2 class="form-step-title">Parent &amp; Student Details</h2>
+              </div>
+              <div class="field">
+                <label class="section-heading">Preferred Session</label>
+                <div class="session-grid gloss-active">
+                  <label class="session-card" data-session-key="session1">
+                    <input type="radio" name="preferred-session" value="jul_6_11" required checked />
+                    <div class="session-card-body">
+                      <div class="session-title" data-session-title data-session-key="session1">July 6th&ndash;11th</div>
+                    </div>
+                  </label>
+                  <label class="session-card" data-session-key="session2">
+                    <input type="radio" name="preferred-session" value="aug_10_14" />
+                    <div class="session-card-body">
+                      <div class="session-title" data-session-title data-session-key="session2">August 10th&ndash;14th</div>
+                    </div>
+                  </label>
+                </div>
+                <small class="field-error">Please select a session.</small>
               </div>
               <div class="field-row three-col">
                 <div class="field">
@@ -3623,12 +3640,14 @@
           'money-club-program': {
             label: 'The Money Club.Org Program',
             tuition: 180,
-            includes: 'Includes the July 6th-11th program, materials, and student build work.',
+            includes: 'Includes the July 6th-11th or August 10th-14th program, materials, and student build work.',
             sessionOrder: {
-              session1: { value: 'jul_6_11', label: 'July 6th-11th' }
+              session1: { value: 'jul_6_11', label: 'July 6th-11th' },
+              session2: { value: 'aug_10_14', label: 'August 10th-14th' }
             },
             sessions: {
-              jul_6_11: 'July 6th-11th'
+              jul_6_11: 'July 6th-11th',
+              aug_10_14: 'August 10th-14th'
             }
           }
         };

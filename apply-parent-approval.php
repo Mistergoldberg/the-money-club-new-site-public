@@ -161,13 +161,16 @@ $program_options = [
     'money-club-program' => [
         'label' => 'The Money Club.Org Program',
         'sessions' => [
-            'jul_6_11' => 'July 6th-11th, 2026'
+            'jul_6_11' => 'July 6th-11th, 2026',
+            'aug_10_14' => 'August 10th-14th, 2026'
         ]
     ]
 ];
 
 // Backward compatibility if old values are still posted.
-if (preg_match('/^session[0-9]+$/', $session)) {
+if ($session === 'session2' || strpos($session, 'aug') === 0) {
+    $session = 'aug_10_14';
+} elseif (preg_match('/^session[0-9]+$/', $session) || strpos($session, 'jul') === 0 || strpos($session, 'tw_') === 0 || strpos($session, 'fw_') === 0) {
     $session = 'jul_6_11';
 }
 if ($program_track === '') {

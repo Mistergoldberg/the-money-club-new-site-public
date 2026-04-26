@@ -79,9 +79,12 @@ if ($student_age !== '') {
 }
 
 $session_options = [
-    '' => 'July 6th-11th',
+    '' => 'July 6th-11th or August 10th-14th',
     'jul_6_11' => 'July 6th-11th',
-    'either' => 'July 6th-11th'
+    'aug_10_14' => 'August 10th-14th',
+    'july' => 'July 6th-11th',
+    'august' => 'August 10th-14th',
+    'either' => 'July 6th-11th or August 10th-14th'
 ];
 
 if (!array_key_exists($interested_session, $session_options)) {
