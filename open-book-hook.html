@@ -895,12 +895,11 @@ nav{
       margin: 0 auto 14px;
       background:
         conic-gradient(
-          var(--purple) 0% 34.75%,
-          var(--teal) 34.75% 48.08%,
-          var(--gold) 48.08% 69.82%,
-          var(--ink) 69.82% 72.6%,
-          var(--slate) 72.6% 91.17%,
-          var(--rose) 91.17% 100%
+          var(--purple) 0% 10%,
+          var(--teal) 10% 38%,
+          var(--gold) 38% 73%,
+          var(--ink) 73% 95%,
+          var(--slate) 95% 100%
         );
       position: relative;
       display: grid;
@@ -2181,17 +2180,17 @@ nav{
             <h3 class="revenue-title">Revenue In</h3>
             <ul class="revenue-list">
               <li>
-                <span>Students per cohort</span>
-                <span class="value">10</span>
+                <span>Sum of students</span>
+                <span class="value">30</span>
               </li>
               <li>
                 <span>Tuition per student</span>
-                <span class="value">$1,100</span>
+                <span class="value">$180</span>
               </li>
             </ul>
             <div class="revenue-total">
               <span class="label">Total revenue</span>
-              <div class="math-figure">$15,000</div>
+              <div class="math-figure">$5,400</div>
             </div>
             <p class="math-note">This tuition funds everything required to run the group with one instructor, venue, and materials.</p>
           </div>
@@ -2202,38 +2201,41 @@ nav{
             <table class="openbook-table" aria-label="Program expense summary">
               <thead>
                 <tr>
-                  <th>Metric</th>
-                  <th>Sums</th>
+                  <th>Expenses Explained</th>
+                  <th>Cost $</th>
+                  <th>Costs %</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td>Marketing</td>
+                  <td>$550</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>Program Materials</td>
+                  <td>$1,500</td>
+                  <td>28%</td>
+                </tr>
+                <tr>
+                  <td>Venue Rental</td>
+                  <td>$1,881</td>
+                  <td>35%</td>
+                </tr>
+                <tr>
                   <td>Insurance</td>
-                  <td>$417</td>
-                </tr>
-                <tr>
-                  <td>Venue rental</td>
-                  <td>$3,261</td>
-                </tr>
-                <tr>
-                  <td>Instructor</td>
-                  <td>$5,212</td>
-                </tr>
-                <tr>
-                  <td>Materials</td>
-                  <td>$2,000</td>
+                  <td>$1,200</td>
+                  <td>22%</td>
                 </tr>
                 <tr>
                   <td>Overhead</td>
-                  <td>$2,785</td>
-                </tr>
-                <tr>
-                  <td>Incidentals (10%)</td>
-                  <td>$1,324</td>
+                  <td>$264</td>
+                  <td>5%</td>
                 </tr>
                 <tr>
                   <td><strong>Total expenses</strong></td>
-                  <td><strong>$15,000*</strong></td>
+                  <td><strong>$5,396*</strong></td>
+                  <td><strong>100%</strong></td>
                 </tr>
               </tbody>
             </table>
@@ -2241,42 +2243,37 @@ nav{
           </div>
           <div class="openbook-pie-card" aria-label="Program budget distribution chart">
             <h3 class="openbook-subheading">Expense Visualization</h3>
-            <div class="openbook-pie" role="img" aria-label="Expense distribution: Instructors 35%, Materials 13%, Venue rental 22%, Insurance 3%, Overhead 19%, Incidentals 9%">
+            <div class="openbook-pie" role="img" aria-label="Expense distribution: Marketing 10%, Program materials 28%, Venue rental 35%, Insurance 22%, Overhead 5%">
               <div class="openbook-pie-center">
                 <span class="label">Total</span>
-                <span class="value">$15,000</span>
+                <span class="value">$5,396</span>
               </div>
             </div>
             <ul class="openbook-legend">
               <li>
                 <span class="legend-dot" style="background: var(--purple);"></span>
-                <span class="legend-label">Instructor</span>
-                <span class="legend-value">35%</span>
+                <span class="legend-label">Marketing</span>
+                <span class="legend-value">10%</span>
               </li>
               <li>
                 <span class="legend-dot" style="background: var(--teal);"></span>
-                <span class="legend-label">Materials</span>
-                <span class="legend-value">13%</span>
+                <span class="legend-label">Program Materials</span>
+                <span class="legend-value">28%</span>
               </li>
               <li>
                 <span class="legend-dot" style="background: var(--gold);"></span>
-                <span class="legend-label">Venue rental</span>
-                <span class="legend-value">22%</span>
+                <span class="legend-label">Venue Rental</span>
+                <span class="legend-value">35%</span>
               </li>
               <li>
                 <span class="legend-dot" style="background: var(--ink);"></span>
                 <span class="legend-label">Insurance</span>
-                <span class="legend-value">3%</span>
+                <span class="legend-value">22%</span>
               </li>
               <li>
                 <span class="legend-dot" style="background: var(--slate);"></span>
                 <span class="legend-label">Overhead</span>
-                <span class="legend-value">19%</span>
-              </li>
-              <li>
-                <span class="legend-dot" style="background: var(--rose);"></span>
-                <span class="legend-label">Incidentals</span>
-                <span class="legend-value">9%</span>
+                <span class="legend-value">5%</span>
               </li>
             </ul>
           </div>
