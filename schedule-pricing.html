@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Schedule & Pricing | Toronto Summer Camp for Ages 10–16 | The Money Club.Org</title>
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <meta name="description" content="See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a 4-week Toronto summer camp for ages 10–16." />
+  <meta name="description" content="See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a one-week Toronto summer program for ages 10–16." />
   <meta property="og:title" content="Schedule &amp; Pricing | Toronto Summer Camp for Ages 10–16 | The Money Club.Org" />
-  <meta property="og:description" content="See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a 4-week Toronto summer camp for ages 10–16." />
+  <meta property="og:description" content="See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a one-week Toronto summer program for ages 10–16." />
   <meta property="og:url" content="https://the-money-club.org/schedule-pricing.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://the-money-club.org/assets/Kids-Index.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Schedule &amp; Pricing | Toronto Summer Camp for Ages 10–16 | The Money Club.Org" />
-  <meta name="twitter:description" content="See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a 4-week Toronto summer camp for ages 10–16." />
+  <meta name="twitter:description" content="See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a one-week Toronto summer program for ages 10–16." />
   <meta name="twitter:image" content="https://the-money-club.org/assets/Kids-Index.jpg" />
   <link rel="canonical" href="https://the-money-club.org/schedule-pricing.html" />
   <script type="application/ld+json">
@@ -25,7 +25,7 @@
           "@id": "https://the-money-club.org/schedule-pricing.html#webpage",
           "url": "https://the-money-club.org/schedule-pricing.html",
           "name": "Schedule & Pricing | Toronto Summer Camp for Ages 10–16 | The Money Club.Org",
-          "description": "See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a 4-week Toronto summer camp for ages 10–16.",
+          "description": "See 2026 session dates, tuition, daily hours, and what’s included for The Money Club.Org, a one-week Toronto summer program for ages 10–16.",
           "about": [
             {
               "@id": "https://the-money-club.org/#organization"
@@ -102,7 +102,7 @@
           "@id": "https://the-money-club.org/schedule-pricing.html#session-1",
           "name": "The Money Club.Org Summer Program Session 1",
           "startDate": "2026-07-06",
-          "endDate": "2026-07-31",
+          "endDate": "2026-07-11",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
           "location": {
@@ -110,7 +110,7 @@
           },
           "offers": {
             "@type": "Offer",
-            "price": "1500",
+            "price": "180",
             "priceCurrency": "CAD",
             "url": "https://the-money-club.org/reserve-a-spot.html"
           },
@@ -122,8 +122,8 @@
           "@type": "EducationEvent",
           "@id": "https://the-money-club.org/schedule-pricing.html#session-2",
           "name": "The Money Club.Org Summer Program Session 2",
-          "startDate": "2026-08-04",
-          "endDate": "2026-08-28",
+          "startDate": "2026-07-06",
+          "endDate": "2026-07-11",
           "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
           "location": {
@@ -131,7 +131,7 @@
           },
           "offers": {
             "@type": "Offer",
-            "price": "1500",
+            "price": "180",
             "priceCurrency": "CAD",
             "url": "https://the-money-club.org/reserve-a-spot.html"
           },
@@ -3145,10 +3145,10 @@ nav{
         var sourceText = paymentMeta ? paymentMeta.textContent : '';
         var match = sourceText.match(/\$([0-9][0-9,]*(?:\.[0-9]{2})?)/);
         if (!match){
-          return 1500;
+          return 180;
         }
         var value = parseFloat(match[1].replace(/,/g, ''));
-        return isNaN(value) ? 1500 : value;
+        return isNaN(value) ? 180 : value;
       }
       function fetchAvailability(url){
         return fetch(url, { cache: 'no-store' }).then(function(res){

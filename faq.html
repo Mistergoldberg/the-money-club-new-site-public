@@ -100,7 +100,7 @@
           "name": "What happens at the end of the program?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The program ends with a live Maker Market, where students present what they built and see what other participants actually choose, support, or spend virtual cash on. Students explain what they built, how they tested their idea, and what they learned during the program. It’s the highlight of the four weeks."
+            "text": "The program ends with a live Maker Market, where students present what they built and see what other participants actually choose, support, or spend virtual cash on. Students explain what they built, how they tested their idea, and what they learned during the program."
           }
         },
         {
@@ -1897,8 +1897,7 @@ nav{
           </details>
           <details class="faq-item">
             <summary>What dates does the program run?</summary>
-            <p>Session 1: July 6–31</p>
-            <p>Session 2: August 4–28</p>
+            <p>July 6th&ndash;11th</p>
           </details>  
           <details class="faq-item">
             <summary>What are the daily hours?</summary>
@@ -1940,7 +1939,7 @@ nav{
             <summary>What happens at the end of the program?</summary>
             <p>The program ends with a live Maker Market, where students present what they built and see what other participants actually choose, support, or spend virtual cash on.</p>
             <p>Students explain what they built, how they tested their idea, and what they learned during the program.</p>
-            <p>It’s often the highlight of the four weeks.</p>
+            <p>It’s often the highlight of the the program.</p>
           </details>
           <details class="faq-item">
             <summary>Is lunch provided?</summary>
@@ -2248,10 +2247,10 @@ nav{
         var sourceText = paymentMeta ? paymentMeta.textContent : '';
         var match = sourceText.match(/\$([0-9][0-9,]*(?:\.[0-9]{2})?)/);
         if (!match){
-          return 1500;
+          return 180;
         }
         var value = parseFloat(match[1].replace(/,/g, ''));
-        return isNaN(value) ? 1500 : value;
+        return isNaN(value) ? 180 : value;
       }
       function fetchAvailability(url){
         return fetch(url, { cache: 'no-store' }).then(function(res){

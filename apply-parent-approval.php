@@ -158,29 +158,20 @@ if ($parent_phone === '' || $parent_phone_digits === '' || strlen($parent_phone_
 }
 
 $program_options = [
-    'two-week-builder-sprint' => [
-        'label' => '2-Week Builder Sprint',
+    'money-club-program' => [
+        'label' => 'The Money Club.Org Program',
         'sessions' => [
-            'tw_jul_6_17' => 'July 6 - July 17, 2026',
-            'tw_jul_20_31' => 'July 20 - July 31, 2026',
-            'tw_aug_4_15' => 'August 4 - August 15, 2026',
-            'tw_aug_17_28' => 'August 17 - August 28, 2026'
-        ]
-    ],
-    'four-week-full-program' => [
-        'label' => '4-Week Full Program',
-        'sessions' => [
-            'fw_jul_6_31' => 'July 6 - July 31, 2026',
-            'fw_aug_4_28' => 'August 4 - August 28, 2026'
+            'jul_6_11' => 'July 6th-11th, 2026'
         ]
     ]
 ];
 
 // Backward compatibility if old values are still posted.
-if ($session === 'session1') {
-    $session = 'fw_jul_6_31';
-} elseif ($session === 'session2') {
-    $session = 'fw_aug_4_28';
+if (preg_match('/^session[0-9]+$/', $session)) {
+    $session = 'jul_6_11';
+}
+if ($program_track === '') {
+    $program_track = 'money-club-program';
 }
 
 if (!array_key_exists($program_track, $program_options)) {
