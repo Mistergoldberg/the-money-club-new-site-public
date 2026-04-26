@@ -1358,7 +1358,7 @@ nav{
       text-align: center;
     }
     .thankyou-card{
-      max-width: var(--content-max);
+      max-width: var(--max-wide);
       margin: 0 auto;
     }
     .thankyou-card .btn{
@@ -1385,13 +1385,15 @@ nav{
       line-height: var(--lh-body);
     }
     .share-btn{
-      width: min(100%, 320px);
+      width: 100%;
       font-family: var(--font-display);
-      font-size: var(--btn-size-lg);
+      font-size: clamp(22px, 3vw, 40px);
       letter-spacing: var(--tracking-display);
       text-transform: uppercase;
-      border-radius: 16px;
-      padding: 20px 22px;
+      border-radius: 18px;
+      padding: 28px 18px;
+      min-height: 96px;
+      line-height: 0.95;
       margin-top: 8px;
     }
 
